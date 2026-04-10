@@ -1,0 +1,33 @@
+{
+  "name": "gsc-check-multiple-pages",
+  "version": "1.0.0",
+  "description": "CLI: GSC Search Analytics, URL Inspection, and sitemap orphan analysis with XLSX output",
+  "type": "module",
+  "main": "dist/cli.js",
+  "bin": {
+    "gsc-analyze": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "dev": "tsx src/cli.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "csv-parse": "^5.6.0",
+    "dotenv": "^16.4.7",
+    "exceljs": "^4.4.0",
+    "googleapis": "^144.0.0",
+    "p-queue": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "license": "MIT"
+}
